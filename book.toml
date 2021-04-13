@@ -1,0 +1,13 @@
+[book]
+authors = ["KiligWYu"]
+language = "zh-CN"
+multilingual = false
+src = "src"
+title = "Kilig 的第二大脑"
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+google-analytics = ""
+git-repository-url = "https://github.com/KiligWYu/Knowledge-Track"
+git-repository-icon = "fa-github"
