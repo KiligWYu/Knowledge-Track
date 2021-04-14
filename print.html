@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> 首页</a></li><li class="chapter-item expanded "><a href="macOS/macOS.html"><strong aria-hidden="true">2.</strong> macOS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="macOS/cli/cli.html"><strong aria-hidden="true">2.1.</strong> 命令行</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="macOS/cli/ohmyzsh.html"><strong aria-hidden="true">2.1.1.</strong> Oh My Zsh</a></li><li class="chapter-item expanded "><a href="macOS/cli/homebrew.html"><strong aria-hidden="true">2.1.2.</strong> Homebrew</a></li><li class="chapter-item expanded "><a href="macOS/cli/rbenv.html"><strong aria-hidden="true">2.1.3.</strong> rbenv</a></li></ol></li><li class="chapter-item expanded "><a href="macOS/apps.html"><strong aria-hidden="true">2.2.</strong> macOS 应用</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -169,7 +169,281 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h1 id="使用说明"><a class="header" href="#使用说明">使用说明</a></h1>
+<p>Hi, there. 欢迎来到 Kilig 的第二大脑，藏在这儿都被你发现了。</p>
+<p>这里会结构化地记录我希望记住的一些知识性的内容，不定时更新。</p>
+<ul>
+<li>👈 通过侧边栏的层级导航菜单可以快速了解大概的知识体系</li>
+<li>按下「S」键可快速搜索</li>
+</ul>
+<h2 id="关于我"><a class="header" href="#关于我">关于我</a></h2>
+<p>若有兴趣了解和认识我，这儿有个「<a href="https://KiligWYu.com/">年更博客</a>」。</p>
+<hr />
+<p>Inspired by <a href="https://binlogo.github.io/Knowledge-Track/Introduction.html">棒棒杉的第二大脑</a>.</p>
+<h1 id="macos"><a class="header" href="#macos">macOS</a></h1>
+<p>记录 macOS 应用与习惯的环境配置。</p>
+<h2 id="前置网络环境配置"><a class="header" href="#前置网络环境配置">前置网络环境配置</a></h2>
+<ul>
+<li><a href="https://nssurge.com">Surge</a></li>
+<li><a href="https://github.com/yichengchen/clashX">ClashX</a></li>
+<li><a href="https://github.com/shadowsocks/ShadowsocksX-NG">ShadowsocksX-NG</a></li>
+</ul>
+<h2 id="开发环境配置"><a class="header" href="#开发环境配置">开发环境配置</a></h2>
+<ul>
+<li><a href="macOS/./cli/ohmyzsh.html">Oh My Zsh</a></li>
+</ul>
+<pre><code class="language-sh">sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+</code></pre>
+<ul>
+<li><a href="macOS/./cli/homebrew.html">Homebrew</a></li>
+</ul>
+<pre><code class="language-sh">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre>
+<ul>
+<li><a href="macOS/./cli/rbenv.html">rbenv</a> - ruby 环境管理工具</li>
+</ul>
+<pre><code class="language-sh">brew install rbenv ruby-build
+</code></pre>
+<ul>
+<li><a href="https://cocoapods.org/">CocoaPods</a></li>
+</ul>
+<pre><code class="language-sh">sudo gem install cocoapods
+pod setup
+</code></pre>
+<p>对于苹果芯片的电脑，需要在命令前加上 <code>arch -x86_64</code>。e.g. <code>arch -x86_64 pod setup</code>.</p>
+<h2 id="更多-cli"><a class="header" href="#更多-cli">更多 CLI</a></h2>
+<ul>
+<li><a href="https://github.com/websperts/tinypng-cli">TinyPNG CLI</a></li>
+</ul>
+<pre><code class="language-sh">npm install -g tinypng-cli
+</code></pre>
+<blockquote>
+<p><a href="https://tinypng.com/">TinyPNG</a> 是一个提供 PNG 和 JPEG 格式图片无损压缩的网站，压缩率高，并且基本不会丢失图片细节。TinyPNG CLI 则是利用其开发者接口制作的命令行工具。</p>
+<p>使用 npm 安装 CLI 工具后，进入 TinyPNG 的 <a href="https://tinypng.com/developers">开发者界面</a> 申请 API Key，在系统的用户目录创建名为「.tinypng」的文件并将获得的 Key 写入此文件。接着，我们就能在终端中使用 tinypng [filepath] 来压缩图片了，压缩后的图片将直接替换原图片。</p>
+<p>用户每个月能免费压缩 500 张图片，每张图片不能超过 5 MB。</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/PicGo/PicGo-Core">PicGo-Core</a></li>
+</ul>
+<pre><code class="language-sh">npm install -g picgo
+</code></pre>
+<p>插件:</p>
+<pre><code class="language-sh">picgo install autocopy rename-file
+</code></pre>
+<h2 id="链接"><a class="header" href="#链接">链接</a></h2>
+<ul>
+<li><a href="https://github.com/herrbischoff/awesome-macos-command-line">Awesome macOS Command Line</a></li>
+<li><a href="https://sspai.com/post/65934">换一种姿势使用网页服务，这些命令行工具值得一试</a></li>
+</ul>
+<h1 id="命令行"><a class="header" href="#命令行">命令行</a></h1>
+<p>假装「黑客」一样行事直到不希望被发现。😜</p>
+<h2 id="工具"><a class="header" href="#工具">工具</a></h2>
+<ul>
+<li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> - A cat(1) clone with syntax highlighting and Git integration.</li>
+</ul>
+<h2 id="alias"><a class="header" href="#alias">Alias</a></h2>
+<pre><code class="language-sh"># Proxy
+alias sson='export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153'
+alias ssoff='unset all_proxy'
+
+export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
+
+# 更新 ClashX Country.mmdb
+alias updateGeoIP='curl -o ~/.config/clash/Country.mmdb https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb'
+
+# Show Connected Device's UDID
+alias udid='system_profiler SPUSBDataType | sed -n -e '/iPad/,/Serial/p' -e '/iPhone/,/Serial/p''
+
+#  Show External IP Address
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+# Hexo
+alias cgd='arch -x86_64 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d'
+alias cgs='arch -x86_64 hexo clean &amp;&amp; hexo g &amp;&amp; hexo s'
+
+# Alias the system vim to MacVim
+alias vi=&quot;/Applications/MacVim.app/Contents/MacOS/Vim&quot;
+alias vim=&quot;vi&quot;
+alias mvim=&quot;vi -g&quot;
+
+# Aria2
+alias aria=&quot;~/OneDrive/Backups/aria2-trackers-update.sh&quot;
+
+# ping
+alias ping5='ping -c 5'
+
+function ~() {
+    cd ~
+}
+
+# switch between release and beta xcodes
+function xcswitch() {
+    RELEASE=&quot;Xcode.app&quot;
+    BETA=&quot;Xcode-beta.app&quot;
+
+    CURRENT=$(xcode-select -p)
+    NEXT=&quot;&quot;
+
+    if [[ &quot;$CURRENT&quot; =~ &quot;$RELEASE&quot; ]]
+    then
+        NEXT=&quot;$BETA&quot;
+    else
+        NEXT=&quot;$RELEASE&quot;
+    fi
+
+    sudo xcode-select -s &quot;/Applications/$NEXT&quot;
+    echo &quot;Switched to $NEXT&quot;
+}
+</code></pre>
+<h1 id="a-hrefhttpsohmyzshinstalloh-my-zsha"><a class="header" href="#a-hrefhttpsohmyzshinstalloh-my-zsha"><a href="https://ohmyz.sh/#install">Oh My Zsh</a></a></h1>
+<h2 id="安装"><a class="header" href="#安装">安装</a></h2>
+<pre><code class="language-sh">sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+</code></pre>
+<h2 id="主题"><a class="header" href="#主题">主题</a></h2>
+<p><code>ZSH_THEME=&quot;af-magic&quot;</code> (inside <code>~/.zshrc</code>).</p>
+<h2 id="a-hrefhttpsgithubcomzsh-userszsh-autosuggestionszsh-autosuggestionsa-自动补全"><a class="header" href="#a-hrefhttpsgithubcomzsh-userszsh-autosuggestionszsh-autosuggestionsa-自动补全"><a href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a> 自动补全</a></h2>
+<pre><code class="language-sh">brew install zsh-autosuggestions
+</code></pre>
+<p>Add the plugin to the list of plugins for Oh My Zsh to load (inside <code>~/.zshrc</code>):</p>
+<pre><code class="language-sh">plugins=(zsh-autosuggestions)
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&quot;fg=#ff00ff,bg=cyan,bold,underline&quot; # Suggestion Highlight Style
+</code></pre>
+<h1 id="a-hrefhttpsbrewshhomebrewa"><a class="header" href="#a-hrefhttpsbrewshhomebrewa"><a href="https://brew.sh">Homebrew</a></a></h1>
+<h2 id="安装-1"><a class="header" href="#安装-1">安装</a></h2>
+<pre><code class="language-sh">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre>
+<h2 id="常用命令"><a class="header" href="#常用命令">常用命令</a></h2>
+<ul>
+<li><code>brew search [TEXT|/REGEX/]</code></li>
+<li><code>brew info [FORMULA...]</code></li>
+<li><code>brew install FORMULA...</code></li>
+<li><code>brew update</code></li>
+<li><code>brew upgrade [FORMULA...]</code></li>
+<li><code>brew uninstall FORMULA...</code></li>
+<li><code>brew list [FORMULA...]</code></li>
+<li><code>brew cleanup</code></li>
+</ul>
+<h2 id="formulae"><a class="header" href="#formulae">Formulae</a></h2>
+<ul>
+<li><a href="https://github.com/iawia002/annie">annie</a></li>
+<li><a href="https://aria2.github.io/">aria2</a></li>
+<li><a href="https://stedolan.github.io/jq/">jq</a></li>
+<li><a href="https://github.com/mas-cli/mas">mas</a></li>
+<li><a href="https://hasseg.org/trash/">trash</a></li>
+<li><a href="https://github.com/xcodereleases/xcinfo">xcinfo</a></li>
+<li><a href="http://mama.indstate.edu/users/ice/tree/">tree</a></li>
+</ul>
+<p><code>tree -N</code> 解决 <code>tree</code> 中文乱码。</p>
+<blockquote>
+<p>-N            Print non-printable characters as is.</p>
+</blockquote>
+<h2 id="casks"><a class="header" href="#casks">Casks</a></h2>
+<ul>
+<li><a href="https://github.com/tonsky/FiraCode">font-fira-code</a></li>
+<li><a href="https://www.jetbrains.com/lp/mono">font-jetbrains-mono</a></li>
+<li><a href="https://github.com/adobe-fonts/source-han-sans">font-source-han-sans</a></li>
+<li><a href="https://github.com/adobe-fonts/source-han-serif">font-source-han-serif</a></li>
+</ul>
+<h2 id="其他"><a class="header" href="#其他">其他</a></h2>
+<p>避免触发自动更新</p>
+<pre><code class="language-sh">export HOMEBREW_NO_AUTO_UPDATE=1
+</code></pre>
+<h2 id="链接-1"><a class="header" href="#链接-1">链接</a></h2>
+<ul>
+<li><a href="https://sspai.com/post/65842">从零开始，编写一个 HomeBrew 缓存清理脚本</a></li>
+</ul>
+<h1 id="a-hrefhttpsgithubcomrbenvrbenvrbenva---ruby-环境管理工具"><a class="header" href="#a-hrefhttpsgithubcomrbenvrbenvrbenva---ruby-环境管理工具"><a href="https://github.com/rbenv/rbenv">rbenv</a> - ruby 环境管理工具</a></h1>
+<h2 id="安装-2"><a class="header" href="#安装-2">安装</a></h2>
+<pre><code class="language-sh">brew install rbenv ruby-build
+</code></pre>
+<p><a href="https://github.com/sstephenson/rbenv">ruby-build</a> 用来编译安装 Ruby 源码，如果选择手动编译，可不使用这个工具。</p>
+<h2 id="常用命令-1"><a class="header" href="#常用命令-1">常用命令</a></h2>
+<ul>
+<li><code>rbenv install --list</code> 查看可用的 ruby版本</li>
+<li><code>rbenv install 3.0.1</code> 从列表中选择 3.0.1 进行安装</li>
+<li><code>rbenv versions</code> 查看已经安装的所有 Ruby 版本</li>
+<li><code>rbenv global 3.0.1</code> 设置全局版本</li>
+<li><code>rbenv local 3.0.1</code> 设置本地版本</li>
+<li><code>rbenv shell 3.0.1</code> 设置当前终端版本</li>
+<li><code>rbenv global system</code> 使用系统 Ruby</li>
+<li><code>rbenv rehash</code> 使用 rbenv 后，gem 还是按照原有的方式进行安装、升级，只是 gem 的安装路径是在 ~/.rbenv 文件夹中当前 Ruby 版本文件夹下。而且，安装带有可执行文件的 gem 后，需要执行一个特别的命令，告诉 rbenv 更新相应的映射关系，这个命令在安装新版本的 Ruby 后也需要执行</li>
+</ul>
+<p>rbenv 中的 Ruby 版本有三个不同的作用域：全局 (global)，本地 (local)，当前终端 (shell)，<strong>查找版本的优先级是 当前终端 &gt; 本地 &gt; 全局。</strong></p>
+<h2 id="链接-2"><a class="header" href="#链接-2">链接</a></h2>
+<ul>
+<li><a href="https://gist.github.com/sandyxu/8aceec7e436a6ab9621f">使用 rbenv 安装和管理 Ruby 版本</a></li>
+</ul>
+<h1 id="macos-应用"><a class="header" href="#macos-应用">macOS 应用</a></h1>
+<p>记录日常使用与喜爱的 macOS 应用</p>
+<ul>
+<li><a href="https://adguard.com/zh_cn/adguard-mac/overview.html">AdGuard</a> - 广告拦截</li>
+<li><a href="https://github.com/davidwernhart/AlDente">AlDente</a> - MBP 充电限制</li>
+<li><a href="https://www.alfredapp.com">Alfred</a> - 快捷打开任意应用或工作流</li>
+<li><a href="https://alt-tab-macos.netlify.app">AltTab</a> - 应用切换</li>
+<li><a href="https://freemacsoft.net/appcleaner">AppCleaner</a> - 应用卸载</li>
+<li><a href="https://apps.apple.com/us/app/id451732904">App Language Chooser</a> - 切换 App 语言</li>
+<li><a href="https://apps.apple.com/us/app/id809625456">Asset Catalog Creator Pro</a> - App 多尺寸图标自动生成</li>
+<li><a href="https://www.avtouchbar.com">AVTouchBar</a> - Touch Bar 上的音频可视化工具</li>
+<li><a href="https://www.macbartender.com">Bartender</a> - 隐藏状态栏图标</li>
+<li><a href="https://bear.app">Bear</a> - 记笔记</li>
+<li><a href="https://apps.apple.com/cn/app/cleaner-for-xcode/id1296084683?mt=12">Cleaner for Xcode</a>
+<ul>
+<li><a href="https://github.com/waylybaye/XcodeCleaner-SwiftUI">开源</a>的 Xcode 清理应用</li>
+</ul>
+</li>
+<li><a href="https://cleanshot.com">CleanShot X</a> - 截图</li>
+<li><a href="https://contexts.co">Contexts</a> - 快速窗口切换</li>
+<li><a href="https://apps.apple.com/us/app/id1024640650">CotEditor</a> - 文本编辑器</li>
+<li><a href="https://www.eudic.net/eudic/mac_dictionary.aspx">Eudic</a> - 词典</li>
+<li><a href="https://git-fork.com">Fork</a> - Git 管理应用，简洁、易用</li>
+<li><a href="https://apps.apple.com/us/app/id1375291184">Flower Password</a> - 密码管理，花密第三方 App
+<ul>
+<li><a href="https://flowerpassword.com">花密</a> - 花密官网</li>
+</ul>
+</li>
+<li><a href="https://iina.io">IINA</a> - The modern media player for macOS</li>
+<li><a href="https://img2icnsapp.com">Image2icon</a> - 图片转 App 图标</li>
+<li><a href="https://apps.apple.com/us/app/id484757536">isHUD</a> - 输入法切换</li>
+<li><a href="https://bjango.com/mac/istatmenus">iStat Menus</a> - 状态栏系统状态</li>
+<li><a href="https://www.iterm2.com">iTerm</a> - 更强大易用的命令行终端
+<ul>
+<li>with <a href="http://ohmyz.sh">oh-my-zsh</a></li>
+</ul>
+</li>
+<li><a href="https://karabiner-elements.pqrs.org">Karabiner</a> - 按键映射</li>
+<li><a href="https://www.keka.io/en">Keka</a> - 解压缩</li>
+<li><a href="https://www.soma-zone.com/LaunchControl">LaunchControl</a> - The launchd GUI</li>
+<li><a href="https://www.corecode.io/macupdater">MacUpdater</a> - 软件更新</li>
+<li><a href="https://magnet.crowdcafe.com">Magnet</a> - 窗口管理</li>
+<li><a href="https://apps.apple.com/us/app/id789066512">Maipo</a> - 微博客户端</li>
+<li><a href="https://github.com/Caldis/Mos">Mos</a> - 外接鼠标平滑滚动</li>
+<li><a href="https://www.lightpillar.com/mosaic.html">Mosaic</a> - 窗口管理</li>
+<li><a href="https://molunerfinn.com/PicGo">PicGo</a> - 图片上传工具</li>
+<li><a href="https://reederapp.com">Reeder</a> - RSS 阅读</li>
+<li><a href="https://matthewpalmer.net/rocket">Rocket</a> - 快速输入 Emoji</li>
+<li><a href="https://github.com/nicklockwood/SwiftFormat">swiftformat for xcode</a> - Swift 代码格式化</li>
+<li><a href="https://github.com/itsuhane/SwitchKey">SwitchKey</a> - 自动切换输入法</li>
+<li><a href="https://apps.apple.com/us/app/id1114272557">TinyCal</a> - 小而美的日历</li>
+<li><a href="https://code.visualstudio.com">VSCode</a> - 编辑器，内部直接使用命令行非常便捷</li>
+</ul>
+<h2 id="其他-1"><a class="header" href="#其他-1">其他</a></h2>
+<ul>
+<li><a href="https://folivora.ai">BetterTouchTool</a> - 自定义触控板手势</li>
+<li><a href="https://gumroad.com/l/NQwlK">ClockDock</a> - Dock 栏时钟</li>
+<li><a href="https://kapeli.com/dash">Dash</a> - 开发文档阅读</li>
+<li><a href="https://software.charliemonroe.net/downie">Downie</a> - Youtube、Bilibili 等流媒体视频下载</li>
+<li><a href="https://hazeover.com">HazeOver</a> - 屏幕遮罩，高亮当前窗口</li>
+<li><a href="https://kaleidoscope.app">Kaleidoscope</a> - Diff 差异检查应用，文本、图片、文件夹、开发流集成</li>
+<li><a href="https://setapp.com">Setapp</a> -付费软件集合</li>
+<li><a href="macOS/./snippetsLab.html">SnippetsLab</a> - 代码片段库，支持 iCloud 备份 + <a href="https://gist.github.com/Binlogo">GitHub Gist</a> 同步</li>
+<li><a href="https://www.apptorium.com/teacode">TeaCode</a> - 代码补全</li>
+<li><a href="https://theunarchiver.com">The Unarchiver</a> - 解压缩</li>
+</ul>
+<h2 id="链接-3"><a class="header" href="#链接-3">链接</a></h2>
+<ul>
+<li><a href="https://github.com/jaywcjlove/awesome-mac">Awesome Mac</a> - 优秀好用的 Mac 应用大合集</li>
+<li><a href="https://github.com/serhii-londar/open-source-mac-os-apps">Awesome macOS open source applications</a> - macOS 开源应用合集</li>
+</ul>
 
                     </main>
 

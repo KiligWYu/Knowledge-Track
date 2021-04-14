@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>macOS 应用 - Kilig 的第二大脑</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../favicon.png">
+        
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../Introduction.html"><strong aria-hidden="true">1.</strong> 首页</a></li><li class="chapter-item expanded "><a href="../macOS/macOS.html"><strong aria-hidden="true">2.</strong> macOS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../macOS/cli/cli.html"><strong aria-hidden="true">2.1.</strong> 命令行</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../macOS/cli/ohmyzsh.html"><strong aria-hidden="true">2.1.1.</strong> Oh My Zsh</a></li><li class="chapter-item expanded "><a href="../macOS/cli/homebrew.html"><strong aria-hidden="true">2.1.2.</strong> Homebrew</a></li><li class="chapter-item expanded "><a href="../macOS/cli/rbenv.html"><strong aria-hidden="true">2.1.3.</strong> rbenv</a></li></ol></li><li class="chapter-item expanded "><a href="../macOS/apps.html" class="active"><strong aria-hidden="true">2.2.</strong> macOS 应用</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Kilig 的第二大脑</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        <a href="https://github.com/KiligWYu/Knowledge-Track" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="macos-应用"><a class="header" href="#macos-应用">macOS 应用</a></h1>
+<p>记录日常使用与喜爱的 macOS 应用</p>
+<ul>
+<li><a href="https://adguard.com/zh_cn/adguard-mac/overview.html">AdGuard</a> - 广告拦截</li>
+<li><a href="https://github.com/davidwernhart/AlDente">AlDente</a> - MBP 充电限制</li>
+<li><a href="https://www.alfredapp.com">Alfred</a> - 快捷打开任意应用或工作流</li>
+<li><a href="https://alt-tab-macos.netlify.app">AltTab</a> - 应用切换</li>
+<li><a href="https://freemacsoft.net/appcleaner">AppCleaner</a> - 应用卸载</li>
+<li><a href="https://apps.apple.com/us/app/id451732904">App Language Chooser</a> - 切换 App 语言</li>
+<li><a href="https://apps.apple.com/us/app/id809625456">Asset Catalog Creator Pro</a> - App 多尺寸图标自动生成</li>
+<li><a href="https://www.avtouchbar.com">AVTouchBar</a> - Touch Bar 上的音频可视化工具</li>
+<li><a href="https://www.macbartender.com">Bartender</a> - 隐藏状态栏图标</li>
+<li><a href="https://bear.app">Bear</a> - 记笔记</li>
+<li><a href="https://apps.apple.com/cn/app/cleaner-for-xcode/id1296084683?mt=12">Cleaner for Xcode</a>
+<ul>
+<li><a href="https://github.com/waylybaye/XcodeCleaner-SwiftUI">开源</a>的 Xcode 清理应用</li>
+</ul>
+</li>
+<li><a href="https://cleanshot.com">CleanShot X</a> - 截图</li>
+<li><a href="https://contexts.co">Contexts</a> - 快速窗口切换</li>
+<li><a href="https://apps.apple.com/us/app/id1024640650">CotEditor</a> - 文本编辑器</li>
+<li><a href="https://www.eudic.net/eudic/mac_dictionary.aspx">Eudic</a> - 词典</li>
+<li><a href="https://git-fork.com">Fork</a> - Git 管理应用，简洁、易用</li>
+<li><a href="https://apps.apple.com/us/app/id1375291184">Flower Password</a> - 密码管理，花密第三方 App
+<ul>
+<li><a href="https://flowerpassword.com">花密</a> - 花密官网</li>
+</ul>
+</li>
+<li><a href="https://iina.io">IINA</a> - The modern media player for macOS</li>
+<li><a href="https://img2icnsapp.com">Image2icon</a> - 图片转 App 图标</li>
+<li><a href="https://apps.apple.com/us/app/id484757536">isHUD</a> - 输入法切换</li>
+<li><a href="https://bjango.com/mac/istatmenus">iStat Menus</a> - 状态栏系统状态</li>
+<li><a href="https://www.iterm2.com">iTerm</a> - 更强大易用的命令行终端
+<ul>
+<li>with <a href="http://ohmyz.sh">oh-my-zsh</a></li>
+</ul>
+</li>
+<li><a href="https://karabiner-elements.pqrs.org">Karabiner</a> - 按键映射</li>
+<li><a href="https://www.keka.io/en">Keka</a> - 解压缩</li>
+<li><a href="https://www.soma-zone.com/LaunchControl">LaunchControl</a> - The launchd GUI</li>
+<li><a href="https://www.corecode.io/macupdater">MacUpdater</a> - 软件更新</li>
+<li><a href="https://magnet.crowdcafe.com">Magnet</a> - 窗口管理</li>
+<li><a href="https://apps.apple.com/us/app/id789066512">Maipo</a> - 微博客户端</li>
+<li><a href="https://github.com/Caldis/Mos">Mos</a> - 外接鼠标平滑滚动</li>
+<li><a href="https://www.lightpillar.com/mosaic.html">Mosaic</a> - 窗口管理</li>
+<li><a href="https://molunerfinn.com/PicGo">PicGo</a> - 图片上传工具</li>
+<li><a href="https://reederapp.com">Reeder</a> - RSS 阅读</li>
+<li><a href="https://matthewpalmer.net/rocket">Rocket</a> - 快速输入 Emoji</li>
+<li><a href="https://github.com/nicklockwood/SwiftFormat">swiftformat for xcode</a> - Swift 代码格式化</li>
+<li><a href="https://github.com/itsuhane/SwitchKey">SwitchKey</a> - 自动切换输入法</li>
+<li><a href="https://apps.apple.com/us/app/id1114272557">TinyCal</a> - 小而美的日历</li>
+<li><a href="https://code.visualstudio.com">VSCode</a> - 编辑器，内部直接使用命令行非常便捷</li>
+</ul>
+<h2 id="其他"><a class="header" href="#其他">其他</a></h2>
+<ul>
+<li><a href="https://folivora.ai">BetterTouchTool</a> - 自定义触控板手势</li>
+<li><a href="https://gumroad.com/l/NQwlK">ClockDock</a> - Dock 栏时钟</li>
+<li><a href="https://kapeli.com/dash">Dash</a> - 开发文档阅读</li>
+<li><a href="https://software.charliemonroe.net/downie">Downie</a> - Youtube、Bilibili 等流媒体视频下载</li>
+<li><a href="https://hazeover.com">HazeOver</a> - 屏幕遮罩，高亮当前窗口</li>
+<li><a href="https://kaleidoscope.app">Kaleidoscope</a> - Diff 差异检查应用，文本、图片、文件夹、开发流集成</li>
+<li><a href="https://setapp.com">Setapp</a> -付费软件集合</li>
+<li><a href="./snippetsLab.html">SnippetsLab</a> - 代码片段库，支持 iCloud 备份 + <a href="https://gist.github.com/Binlogo">GitHub Gist</a> 同步</li>
+<li><a href="https://www.apptorium.com/teacode">TeaCode</a> - 代码补全</li>
+<li><a href="https://theunarchiver.com">The Unarchiver</a> - 解压缩</li>
+</ul>
+<h2 id="链接"><a class="header" href="#链接">链接</a></h2>
+<ul>
+<li><a href="https://github.com/jaywcjlove/awesome-mac">Awesome Mac</a> - 优秀好用的 Mac 应用大合集</li>
+<li><a href="https://github.com/serhii-londar/open-source-mac-os-apps">Awesome macOS open source applications</a> - macOS 开源应用合集</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../macOS/cli/rbenv.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../macOS/cli/rbenv.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
