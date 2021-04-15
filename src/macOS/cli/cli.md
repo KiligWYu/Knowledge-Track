@@ -25,8 +25,8 @@ alias udid='system_profiler SPUSBDataType | sed -n -e '/iPad/,/Serial/p' -e '/iP
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Hexo
-alias cgd='arch -x86_64 hexo clean && hexo g && hexo d'
-alias cgs='arch -x86_64 hexo clean && hexo g && hexo s'
+alias cgd='hexo clean && hexo g && hexo d'
+alias cgs='hexo clean && hexo g && hexo s'
 
 # Alias the system vim to MacVim
 alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
