@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> 首页</a></li><li class="chapter-item expanded "><a href="macOS/macOS.html"><strong aria-hidden="true">2.</strong> macOS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="macOS/cli/cli.html"><strong aria-hidden="true">2.1.</strong> 命令行</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="macOS/cli/ohmyzsh.html"><strong aria-hidden="true">2.1.1.</strong> Oh My Zsh</a></li><li class="chapter-item expanded "><a href="macOS/cli/homebrew.html"><strong aria-hidden="true">2.1.2.</strong> Homebrew</a></li><li class="chapter-item expanded "><a href="macOS/cli/rbenv.html"><strong aria-hidden="true">2.1.3.</strong> rbenv</a></li></ol></li><li class="chapter-item expanded "><a href="macOS/apps.html"><strong aria-hidden="true">2.2.</strong> macOS 应用</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> 首页</a></li><li class="chapter-item expanded "><a href="meta/meta.html"><strong aria-hidden="true">2.</strong> 知识体系单元</a></li><li class="chapter-item expanded "><a href="macOS/macOS.html"><strong aria-hidden="true">3.</strong> macOS</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="macOS/cli/cli.html"><strong aria-hidden="true">3.1.</strong> 命令行</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="macOS/cli/ohmyzsh.html"><strong aria-hidden="true">3.1.1.</strong> Oh My Zsh</a></li><li class="chapter-item expanded "><a href="macOS/cli/homebrew.html"><strong aria-hidden="true">3.1.2.</strong> Homebrew</a></li><li class="chapter-item expanded "><a href="macOS/cli/rbenv.html"><strong aria-hidden="true">3.1.3.</strong> rbenv</a></li></ol></li><li class="chapter-item expanded "><a href="macOS/apps.html"><strong aria-hidden="true">3.2.</strong> macOS 应用</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -180,6 +180,38 @@
 <p>若有兴趣了解和认识我，这儿有个「<a href="https://KiligWYu.com/">年更博客</a>」。</p>
 <hr />
 <p>Inspired by <a href="https://binlogo.github.io/Knowledge-Track/Introduction.html">棒棒杉的第二大脑</a>.</p>
+<p>希望这里将会是我真正意义上的第二大脑。</p>
+<blockquote>
+<p>弱水三千，取一瓢饮。</p>
+</blockquote>
+<h2 id="笔记流程"><a class="header" href="#笔记流程">笔记流程</a></h2>
+<blockquote>
+<p>Input -&gt; Process -&gt; Output</p>
+</blockquote>
+<p><a href="https://bear.app">Bear</a> 输入，<a href="https://code.visualstudio.com">VSCode</a> 加工，<a href="https://github.com/KiligWYu/Knowledge-Track">GitHub</a> 输出。</p>
+<h2 id="内容结构"><a class="header" href="#内容结构">内容结构</a></h2>
+<ol>
+<li>标题</li>
+<li>描述</li>
+<li>相关内容</li>
+<li>记录正文</li>
+<li>链接</li>
+</ol>
+<h2 id="搭建记录与发布"><a class="header" href="#搭建记录与发布">搭建、记录与发布</a></h2>
+<ul>
+<li><a href="https://bear.app">Bear</a> + <a href="https://code.visualstudio.com">VSCode</a> 书写 ✍️</li>
+<li><a href="https://github.com/rust-lang/mdBook">mdBook</a> 生成 🧰</li>
+<li><a href="https://pages.github.com">GitHub Pages</a> 发布 🌏</li>
+</ul>
+<blockquote>
+<p>采用<strong>免费的</strong> <a href="https://github.com/features/actions">GitHub Actions</a> 自动化部署。</p>
+</blockquote>
+<h2 id="其他大脑传送带"><a class="header" href="#其他大脑传送带">其他大脑传送带</a></h2>
+<ul>
+<li><a href="https://binlogo.github.io/Knowledge-Track/Introduction.html">棒棒杉的第二大脑</a> - 灵感来源</li>
+<li><a href="https://wiki.nikitavoloboev.xyz">Everything I know by Nikita Voloboev</a></li>
+<li><a href="https://davidseah.gitbook.io/davidseah">David Seah</a></li>
+</ul>
 <h1 id="macos"><a class="header" href="#macos">macOS</a></h1>
 <p>记录 macOS 应用与习惯的环境配置。</p>
 <h2 id="前置网络环境配置"><a class="header" href="#前置网络环境配置">前置网络环境配置</a></h2>
@@ -258,8 +290,8 @@ alias udid='system_profiler SPUSBDataType | sed -n -e '/iPad/,/Serial/p' -e '/iP
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # Hexo
-alias cgd='arch -x86_64 hexo clean &amp;&amp; hexo g &amp;&amp; hexo d'
-alias cgs='arch -x86_64 hexo clean &amp;&amp; hexo g &amp;&amp; hexo s'
+alias cgd='hexo clean &amp;&amp; hexo g &amp;&amp; hexo d'
+alias cgs='hexo clean &amp;&amp; hexo g &amp;&amp; hexo s'
 
 # Alias the system vim to MacVim
 alias vi=&quot;/Applications/MacVim.app/Contents/MacOS/Vim&quot;
@@ -386,6 +418,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&quot;fg=#ff00ff,bg=cyan,bold,underline&quot; # 
 <li><a href="https://www.avtouchbar.com">AVTouchBar</a> - Touch Bar 上的音频可视化工具</li>
 <li><a href="https://www.macbartender.com">Bartender</a> - 隐藏状态栏图标</li>
 <li><a href="https://bear.app">Bear</a> - 记笔记</li>
+<li><a href="https://www.globaldelight.com/boom/">Boom 3D</a> - Mac 音频增强</li>
 <li><a href="https://apps.apple.com/cn/app/cleaner-for-xcode/id1296084683?mt=12">Cleaner for Xcode</a>
 <ul>
 <li><a href="https://github.com/waylybaye/XcodeCleaner-SwiftUI">开源</a>的 Xcode 清理应用</li>
@@ -395,14 +428,16 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&quot;fg=#ff00ff,bg=cyan,bold,underline&quot; # 
 <li><a href="https://contexts.co">Contexts</a> - 快速窗口切换</li>
 <li><a href="https://apps.apple.com/us/app/id1024640650">CotEditor</a> - 文本编辑器</li>
 <li><a href="https://www.eudic.net/eudic/mac_dictionary.aspx">Eudic</a> - 词典</li>
-<li><a href="https://git-fork.com">Fork</a> - Git 管理应用，简洁、易用</li>
+<li><a href="https://www.apptorium.com/expressions">Expressions</a> - 正则表达式</li>
 <li><a href="https://apps.apple.com/us/app/id1375291184">Flower Password</a> - 密码管理，花密第三方 App
 <ul>
 <li><a href="https://flowerpassword.com">花密</a> - 花密官网</li>
 </ul>
 </li>
+<li><a href="https://git-fork.com">Fork</a> - Git 管理应用，简洁、易用</li>
 <li><a href="https://iina.io">IINA</a> - The modern media player for macOS</li>
 <li><a href="https://img2icnsapp.com">Image2icon</a> - 图片转 App 图标</li>
+<li><a href="https://imazing.com">iMazing</a> - iPhone 管理</li>
 <li><a href="https://apps.apple.com/us/app/id484757536">isHUD</a> - 输入法切换</li>
 <li><a href="https://bjango.com/mac/istatmenus">iStat Menus</a> - 状态栏系统状态</li>
 <li><a href="https://www.iterm2.com">iTerm</a> - 更强大易用的命令行终端
@@ -410,34 +445,47 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&quot;fg=#ff00ff,bg=cyan,bold,underline&quot; # 
 <li>with <a href="http://ohmyz.sh">oh-my-zsh</a></li>
 </ul>
 </li>
-<li><a href="https://karabiner-elements.pqrs.org">Karabiner</a> - 按键映射</li>
 <li><a href="https://www.keka.io/en">Keka</a> - 解压缩</li>
+<li><a href="https://karabiner-elements.pqrs.org">Karabiner</a> - 按键映射</li>
 <li><a href="https://www.soma-zone.com/LaunchControl">LaunchControl</a> - The launchd GUI</li>
 <li><a href="https://www.corecode.io/macupdater">MacUpdater</a> - 软件更新</li>
 <li><a href="https://magnet.crowdcafe.com">Magnet</a> - 窗口管理</li>
 <li><a href="https://apps.apple.com/us/app/id789066512">Maipo</a> - 微博客户端</li>
 <li><a href="https://github.com/Caldis/Mos">Mos</a> - 外接鼠标平滑滚动</li>
 <li><a href="https://www.lightpillar.com/mosaic.html">Mosaic</a> - 窗口管理</li>
+<li><a href="https://paw.cloud">Paw</a> - HTTP 客户端</li>
+<li><a href="https://pdfexpert.com">PDF Expert</a> - PDF 阅读与编辑</li>
 <li><a href="https://molunerfinn.com/PicGo">PicGo</a> - 图片上传工具</li>
 <li><a href="https://reederapp.com">Reeder</a> - RSS 阅读</li>
 <li><a href="https://matthewpalmer.net/rocket">Rocket</a> - 快速输入 Emoji</li>
-<li><a href="https://github.com/nicklockwood/SwiftFormat">swiftformat for xcode</a> - Swift 代码格式化</li>
+<li><a href="https://www.realmacsoftware.com/squash">Squash</a> - 图片压缩工具</li>
+<li><a href="https://github.com/nicklockwood/SwiftFormat">SwiftFormat for Xcode</a> - Swift 代码格式化</li>
 <li><a href="https://github.com/itsuhane/SwitchKey">SwitchKey</a> - 自动切换输入法</li>
+<li><a href="https://tableplus.com">TablePlus</a> - 数据库管理</li>
+<li><a href="https://mytab.space">Tab Space</a> - Safari 标签页管理</li>
 <li><a href="https://apps.apple.com/us/app/id1114272557">TinyCal</a> - 小而美的日历</li>
 <li><a href="https://code.visualstudio.com">VSCode</a> - 编辑器，内部直接使用命令行非常便捷</li>
 </ul>
 <h2 id="其他-1"><a class="header" href="#其他-1">其他</a></h2>
 <ul>
+<li><a href="https://github.com/mayswind/AriaNg-Native">AriaNg Native</a> - Aria2 GUI</li>
 <li><a href="https://folivora.ai">BetterTouchTool</a> - 自定义触控板手势</li>
 <li><a href="https://gumroad.com/l/NQwlK">ClockDock</a> - Dock 栏时钟</li>
 <li><a href="https://kapeli.com/dash">Dash</a> - 开发文档阅读</li>
 <li><a href="https://software.charliemonroe.net/downie">Downie</a> - Youtube、Bilibili 等流媒体视频下载</li>
 <li><a href="https://hazeover.com">HazeOver</a> - 屏幕遮罩，高亮当前窗口</li>
 <li><a href="https://kaleidoscope.app">Kaleidoscope</a> - Diff 差异检查应用，文本、图片、文件夹、开发流集成</li>
+<li><a href="https://github.com/macvim-dev/macvim">MacVim</a> - macOS Vim GUI</li>
 <li><a href="https://setapp.com">Setapp</a> -付费软件集合</li>
-<li><a href="macOS/./snippetsLab.html">SnippetsLab</a> - 代码片段库，支持 iCloud 备份 + <a href="https://gist.github.com/Binlogo">GitHub Gist</a> 同步</li>
+<li><a href="macOS/./snippetsLab.html">SnippetsLab</a> - 代码片段库，支持 iCloud 备份</li>
 <li><a href="https://www.apptorium.com/teacode">TeaCode</a> - 代码补全</li>
 <li><a href="https://theunarchiver.com">The Unarchiver</a> - 解压缩</li>
+</ul>
+<h2 id="screen-saver"><a class="header" href="#screen-saver">Screen Saver</a></h2>
+<ul>
+<li><a href="https://github.com/JohnCoates/Aerial">Aerial</a> - Apple TV Aerial Views Screen Saver</li>
+<li><a href="https://github.com/lekevicius/october30">October 30</a> - Randomly changes between 371 Apple logos</li>
+<li><a href="https://github.com/bjdehang/100-macos-screensavers">更多</a> - 共收集 37 个屏保</li>
 </ul>
 <h2 id="链接-3"><a class="header" href="#链接-3">链接</a></h2>
 <ul>
