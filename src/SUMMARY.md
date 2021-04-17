@@ -10,3 +10,7 @@
     - [Homebrew](./macOS/cli/homebrew.md)
     - [rbenv](./macOS/cli/rbenv.md)
   - [macOS 应用](./macOS/apps.md)
+
+- [设计](./Design/Design.md)
+  - [Sketch](./Design/Sketch.md)
+  - [Figma](./Design/Figma.md)
