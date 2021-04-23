@@ -63,7 +63,6 @@
 - [MacVim](https://github.com/macvim-dev/macvim) - macOS Vim GUI
 - [Setapp](https://setapp.com) -付费软件集合
 - [SnippetsLab](./snippetsLab.md) - 代码片段库，支持 iCloud 备份
-- [TeaCode](https://www.apptorium.com/teacode) - 代码补全
 - [The Unarchiver](https://theunarchiver.com) - 解压缩
 
 ## Screen Saver

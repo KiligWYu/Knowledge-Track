@@ -38,6 +38,8 @@
 - [LOL Colors](https://www.webdesignrankings.com/resources/lolcolors/) - Curated color palette inspiration.
 - [Flat UI Colors 2](https://flatuicolors.com/)
 - [中国传统颜色](http://zhongguose.com/)
+- [日本传统颜色](https://nipponcolors.com/)
+- [日本传统色系](https://zh.wikipedia.org/wiki/日本传统色系/) - 维基百科
 - [渐变色](https://uigradients.com/)
 - [Colorspire](https://www.colorspire.com/) - Create Color Schemes, Test Color Combinations.
 
