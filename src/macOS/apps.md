@@ -13,11 +13,10 @@
 - [Bartender](https://www.macbartender.com) - 隐藏状态栏图标
 - [Bear](https://bear.app) - 记笔记
 - [Boom 3D](https://www.globaldelight.com/boom/) - Mac 音频增强
+- [Charles](https://www.charlesproxy.com/) - Web Debugging Proxy
 - [Cleaner for Xcode](https://apps.apple.com/cn/app/cleaner-for-xcode/id1296084683?mt=12)
   - [开源](https://github.com/waylybaye/XcodeCleaner-SwiftUI)的 Xcode 清理应用
 - [CleanShot X](https://cleanshot.com) - 截图
-- [Contexts](https://contexts.co) - 快速窗口切换
-- [CotEditor](https://apps.apple.com/us/app/id1024640650) - 文本编辑器
 - [Eudic](https://www.eudic.net/eudic/mac_dictionary.aspx) - 词典
 - [Expressions](https://www.apptorium.com/expressions) - 正则表达式
 - [Flower Password](https://apps.apple.com/us/app/id1375291184) - 密码管理，花密第三方 App
@@ -44,6 +43,7 @@
 - [Reeder](https://reederapp.com) - RSS 阅读
 - [Rocket](https://matthewpalmer.net/rocket) - 快速输入 Emoji
 - [Squash](https://www.realmacsoftware.com/squash) - 图片压缩工具
+- [Sublime Text](https://www.sublimetext.com/) - 文本编辑器
 - [SwiftFormat for Xcode](https://github.com/nicklockwood/SwiftFormat) - Swift 代码格式化
 - [SwitchKey](https://github.com/itsuhane/SwitchKey) - 自动切换输入法
 - [TablePlus](https://tableplus.com) - 数据库管理
@@ -56,6 +56,7 @@
 - [AriaNg Native](https://github.com/mayswind/AriaNg-Native) - Aria2 GUI
 - [BetterTouchTool](https://folivora.ai) - 自定义触控板手势
 - [ClockDock](https://gumroad.com/l/NQwlK) - Dock 栏时钟
+- [CotEditor](https://apps.apple.com/us/app/id1024640650) - 文本编辑器
 - [Dash](https://kapeli.com/dash) - 开发文档阅读
 - [Downie](https://software.charliemonroe.net/downie) - Youtube、Bilibili 等流媒体视频下载
 - [HazeOver](https://hazeover.com) - 屏幕遮罩，高亮当前窗口
