@@ -14,7 +14,9 @@
 - [计算机科学]()
   - [编程语言](./ProgrammingLanguages/ProgrammingLanguages.md)
     - [Swift](./ProgrammingLanguages/Swift/Swift.md)
-      - [Swift 进阶](./ProgrammingLanguages/Swift/AdvancedSwift.md) 
+      - [Swift 进阶](./ProgrammingLanguages/Swift/AdvancedSwift.md)
+    - [Objective-C](./ProgrammingLanguages/OC/OC.md)
+      - [Objective-C 底层学习笔记](./ProgrammingLanguages/OC/OCNote.md)
 
 - [设计](./Design/Design.md)
   - [Sketch](./Design/Sketch.md)
